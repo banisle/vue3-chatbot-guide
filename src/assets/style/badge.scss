@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+// mark: v-badge
+.v-badge{
+  .v-badge__wrapper{
+    margin: 0 !important;
+    .v-badge__badge{
+      width: 6px !important;
+      height: 6px !important;
+    }
+  }
+  &.type-auto{
+    .v-badge__badge{
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+}
+
+// custom badge
+.pl-badge-tab{
+  .v-btn{
+    display: flex;
+    .v-btn__content{
+      order: 0;
+    }
+    &[count]::before {
+      content: attr(count);
+      order: 1;
+      min-width: 30px;
+      margin-left: 4px;
+      background: #4f62cd;
+      border-radius: 15px;
+      padding: 2px 4px;
+      font-size: 11px;
+      color: #FFF;
+    }
+  }
+}
+
+// mark: chip
+.v-chip.v-chip--density-default{
+  height: 24px !important;
+}

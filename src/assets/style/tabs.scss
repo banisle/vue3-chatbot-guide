@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+// mark: tabs
+.pl-tabs{
+  padding: 4px;
+  background: #D9D9D9;
+  border-radius: 12px !important;
+  .v-btn{
+    height: auto !important;
+    font-size: 12px;
+    font-weight: 400 !important;
+    border-radius: 12px !important;
+    &.v-tab--selected{
+      background: #4F5974;
+      color: #FFF;
+      .v-tab__slider{
+        height: 3px !important;
+      }
+    }
+  }
+}
+.pl-default-tab{
+  .v-tab__slider{
+    height: 4px !important;
+  }
+}

@@ -1,0 +1,43 @@
+@charset 'utf-8';
+// mark: button
+.pl-btn{
+  border-radius: 6px !important;
+  border: 1px solid $color-main;
+  .v-btn__content{
+    text-transform: none;
+    letter-spacing: -0.1px;
+  }
+  &.v-btn--density-default{
+    --v-btn-height: 32px;
+  }
+  &.v-btn--size-small{
+    --v-btn-height: 28px;
+  }
+  &.v-btn--variant-outlined{
+    border-color: $color-border;
+  }
+  &.v-btn--size-small{
+    line-height: 0;
+    .v-btn__content{
+      font-weight: 400 !important;
+    }
+  }
+  &.type-line{
+    border: 1px solid $color-border !important;
+  }
+  &.is-sub {
+    background: #EEE;
+  }
+}
+.v-btn--icon{
+  --v-btn-height: 20px !important
+}
+.vertical-btn{
+  display: flex !important;
+  flex-direction: column !important;
+  height: auto !important;
+  padding: 12px !important;
+  .v-btn__prepend{
+    margin: 0;
+  }
+}
